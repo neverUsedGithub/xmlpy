@@ -19,4 +19,4 @@ element = (
 if element.attributes["style"]["color"] == "red":
   print("color is red")
 
-print(element.pretty(indent=4))
+print(element)
