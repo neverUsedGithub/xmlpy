@@ -1,0 +1,22 @@
+h1cont = "world!"
+
+element = (
+  <div
+    attribute="value"
+    style={{
+      "color": "red",
+      "background": "green"
+    }}
+  >
+    <h1>Hello {{ h1cont.upper() }}</h1>
+    <h2>Child 2</h2>
+    <div>
+      <span>Some text</span>
+    </div>
+  </div>
+)
+
+if element.attributes["style"]["color"] == "red":
+  print("color is red")
+
+print(element.pretty(indent=4))
