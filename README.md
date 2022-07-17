@@ -7,6 +7,9 @@ XMLPy adds html and basic html templating to python.
 2. `cd xmlpy`
 3. `python3 xmlpy.py`
 
+# Issues
+self-closing tags are not supported.
+
 # Examples
 ### Hello, World!
 ```jsx
