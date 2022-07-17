@@ -25,9 +25,9 @@ print(<h1>Hello, {{ to }}</h1>)
 ```
 
 ### Costum element class
-XMLPy uses a class called `Element` to store html elements. If you want to use your own class you need to create something like:
+XMLPy uses a class called `XMLPyElement` to store html elements. XMLPyElement take the name, attribute and children in the constructor. Example class: 
 ```py
-class Element:
+class XMLPyElement:
   def __init__(self, name, attributes, children):
     # Do anything with name, attributes and children
 ```
