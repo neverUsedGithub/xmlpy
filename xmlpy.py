@@ -1,6 +1,6 @@
 import re
 
-# Credits to: https://limpet.net/mbrubeck/2014/08/11/toy-layout-engine-2.html
+# HTML Parser credits to: https://limpet.net/mbrubeck/2014/08/11/toy-layout-engine-2.html
 class Element:
   def __init__(self, name, attributes, children):
     self.name = name
