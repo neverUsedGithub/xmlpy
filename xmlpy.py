@@ -148,7 +148,7 @@ def translateElement(element):
   attrs = "{" + ', '.join(attributes) + "}"
   return f"createEl('{element.name}', {attrs}, [{', '.join(children)}])"
 
-def translatePYML(string):
+def translateXMLPY(string):
   code = ""
   
   is_str = False
@@ -247,4 +247,4 @@ class Element:
 def createEl(name, attributes, children):
   return Element(name, attributes, children)
 
-""" + translatePYML(code))
+""" + translateXMLPY(code))
