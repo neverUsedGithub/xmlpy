@@ -1,5 +1,13 @@
 h1cont = "world!"
 
+print(5 < 10)
+
+"""
+<h1>Hello, World!</h1>
+"""
+
+class CostumEl: pass
+
 element = (
   <div
     attribute="value"
@@ -7,8 +15,10 @@ element = (
       "color": "red",
       "background": "green"
     }}
+    other={"something"}
   >
-    <h1>Hello {{ h1cont.upper() }}</h1>
+    <CostumEl something={"yes"} />
+    <h1>Hello { h1cont.upper() }</h1>
     <h2>Child 2</h2>
     <div>
       <span>Some text</span>

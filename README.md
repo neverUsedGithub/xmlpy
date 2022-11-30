@@ -12,19 +12,26 @@ self-closing tags are not supported.
 
 # Examples
 ### Hello, World!
-```jsx
-print(<h1>Hello, World!</h1>)
+```py
+print(<h1>Hello, World!</h1>) # Element('h1', {}, [ "Hello, World!" ])
+```
+
+### Costum Elements
+```py
+class MyElement: pass
+
+print(<MyElement something="test" />) # Element(MyElement, { something: 'test' }, [])
 ```
 
 ### Attribute templating
-```jsx
-print(<h1 style={{'color': 'red'}}>Hello, World!</h1>)
+```py
+print(<h1 style={{'color': 'red'}}>Hello, World!</h1>) # Element('h1', { style: { color: 'red' } }, [ 'Hello, World!' ])
 ```
 
 ### Body Templating
-```jsx
+```py
 to = "World!"
-print(<h1>Hello, {{ to }}</h1>)
+print(<h1>Hello, { to }</h1>) # Element('h1', {}, [ "Hello, World!" ])
 ```
 
 ### Costum element class
