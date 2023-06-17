@@ -152,7 +152,6 @@ def transpile_element(element, xmlpy_factory):
 
   for child in element.children:
     if type(child) == str:
-      # child = re.sub(r"{{ *(.+?) *}}", lambda m: "{%s}" % m.group(1), child)
       child = re.sub(r"{ *(.+?) *}", lambda m: '\",%s,\"' % m.group(1), child)
       
       child = child.replace("'", "\\'")
@@ -221,7 +220,7 @@ if __name__ == "__main__":
     print("""Usage: python xmlpy.py <file>
   -o, --output <file>  : output file
   -f, --factory <name> : the element factory
-  -h, --help           : show this help
+  -h, --help           : show this help menu
   -n, --no-header      : don't write the xmlpy header""")
 
   if len(rargs) == 0:
