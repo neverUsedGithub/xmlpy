@@ -13,7 +13,7 @@ XMLPy adds html and basic html templating to python.
 print(<h1>Hello, World!</h1>) # Element('h1', {}, [ "Hello, World!" ])
 ```
 
-### Costum Elements
+### Costum elements
 ```py
 class MyElement: pass
 
@@ -25,16 +25,11 @@ print(<MyElement something="test" />) # Element(MyElement, { something: 'test' }
 print(<h1 style={{'color': 'red'}}>Hello, World!</h1>) # Element('h1', { style: { color: 'red' } }, [ 'Hello, World!' ])
 ```
 
-### Body Templating
+### Body templating
 ```py
 to = "World!"
 print(<h1>Hello, { to }</h1>) # Element('h1', {}, [ "Hello, World!" ])
 ```
 
-### Costum element class
-XMLPy uses a class called `XMLPyElement` to store html elements. XMLPyElement take the name, attribute and children in the constructor. Example class: 
-```py
-class XMLPyElement:
-  def __init__(self, name, attributes, children):
-    # Do anything with name, attributes and children
-```
+### Element factories
+By default XMLPy uses a class called `PyElement` to store html elements. To overwrite this include a comment like `### @xmlpy MyElement` or use `-f <name>` cli flag, where `MyElement` is a class that takes the name, attributes and children of the element.
