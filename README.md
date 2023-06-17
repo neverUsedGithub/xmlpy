@@ -4,7 +4,7 @@ XMLPy adds html and basic html templating to python.
 # How to use?
 1. `git clone https://github.com/neverUsedGithub/xmlpy/`
 2. `cd xmlpy`
-3. `python xmlpy.py`
+3. `python cli.py`
 
 # Examples
 ### Hello, World!
