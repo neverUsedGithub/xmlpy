@@ -28,7 +28,7 @@ print(<h1 style={{'color': 'red'}}>Hello, World!</h1>) # Element('h1', { style: 
 ### Body templating
 ```py
 to = "World!"
-print(<h1>Hello, { to }</h1>) # Element('h1', {}, [ "Hello, World!" ])
+print(<h1>Hello, { to }</h1>) # Element('h1', {}, [ "Hello, ", "World!" ])
 ```
 
 ### Element factories
