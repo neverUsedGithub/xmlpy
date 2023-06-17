@@ -218,7 +218,7 @@ if __name__ == "__main__":
   rargs = sys.argv[1:]
 
   def printUsage():
-    print("""Usage: python3 xmlpy.py <file>
+    print("""Usage: python xmlpy.py <file>
   -o, --output <file>  : output file
   -f, --factory <name> : the element factory
   -h, --help           : show this help
